@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/google_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="10dp"
+        android:background="@drawable/bg_button">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_button"/>
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/autocomplete_fragment"
+            android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="117dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="120dp"
+        android:elevation="10dp"
+        android:background="@drawable/bg_button"/>
+
+    <TextView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="129dp"
+        android:layout_marginStart="23dp"
+        android:rotation="-45"
+        android:elevation="10dp"
+        android:background="@drawable/compass"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="117dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginEnd="174dp"
+        android:elevation="10dp"
+        android:background="@null">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/radius"
+            android:inputType="numberDecimal"
+            android:hint="Radius (km)"
+            android:textSize="20dp"
+            android:textColorHint="@color/quantum_grey400"
+            android:textColor="@color/black"
+            android:background="@null"
+            android:imeOptions="actionDone"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/set"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="120dp"
+        android:elevation="10dp"
+        android:outlineProvider="none"
+        android:background="@drawable/bg_button"/>
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/tick"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="122dp"
+        android:layout_marginEnd="125dp"
+        android:elevation="10dp"
+        android:background="@drawable/tick"/>
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/tick_"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="122dp"
+        android:layout_marginEnd="125dp"
+        android:elevation="10dp"
+        android:background="@drawable/tick_"/>
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/song"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="64dp"
+        android:elevation="10dp"
+        android:background="@drawable/bg_button"/>
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/circle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="122dp"
+        android:layout_marginEnd="69dp"
+        android:elevation="10dp"
+        android:background="@drawable/circle"/>
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/circle_"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="122dp"
+        android:layout_marginEnd="69dp"
+        android:elevation="10dp"
+        android:background="@drawable/circle_"/>
+
+    <TextView
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:id="@+id/vibration"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="123dp"
+        android:layout_marginEnd="70dp"
+        android:elevation="10dp"
+        android:background="@drawable/vibration"/>
+
+    <TextView
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:id="@+id/headphone_"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="76dp"
+        android:elevation="10dp"
+        android:background="@drawable/headphone_"/>
+
+    <TextView
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:id="@+id/num1_"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="86.5dp"
+        android:elevation="10dp"
+        android:background="@drawable/num1_"/>
+
+    <TextView
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:id="@+id/num2_"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="86dp"
+        android:elevation="10dp"
+        android:background="@drawable/num2_"/>
+
+    <TextView
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:id="@+id/num3_"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="86dp"
+        android:elevation="10dp"
+        android:background="@drawable/num3_"/>
+
+    <TextView
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:id="@+id/num4_"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="86dp"
+        android:elevation="10dp"
+        android:background="@drawable/num4_"/>
+
+    <TextView
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:id="@+id/num5_"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="86dp"
+        android:elevation="10dp"
+        android:background="@drawable/num5_"/>
+
+    <TextView
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:id="@+id/num6_"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="86dp"
+        android:elevation="10dp"
+        android:background="@drawable/num6_"/>
+
+    <TextView
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:id="@+id/num7_"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="85.75dp"
+        android:elevation="10dp"
+        android:background="@drawable/num7_"/>
+
+    <TextView
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:id="@+id/num8_"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="86dp"
+        android:elevation="10dp"
+        android:background="@drawable/num8_"/>
+
+    <TextView
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:id="@+id/num9_"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="86dp"
+        android:elevation="10dp"
+        android:background="@drawable/num9_"/>
+
+    <TextView
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:id="@+id/num10_1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="88.75dp"
+        android:elevation="10dp"
+        android:background="@drawable/num1_"/>
+
+    <TextView
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:id="@+id/num10_0"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="84.25dp"
+        android:elevation="10dp"
+        android:background="@drawable/num0_"/>
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/tv_normal"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="10dp"
+        android:background="@drawable/bg_button"/>
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/tv_satellite"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="10dp"
+        android:background="@drawable/bg_button"/>
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/earth"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="122dp"
+        android:layout_marginEnd="12.5dp"
+        android:elevation="10dp"
+        android:background="@drawable/earth"/>
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/earth_"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="122dp"
+        android:layout_marginEnd="12.5dp"
+        android:elevation="10dp"
+        android:background="@drawable/earth_"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/samoyedframe"
+        android:src="@drawable/samoyedframe"
+        android:scaleType="centerCrop"/>
+
+</RelativeLayout>
