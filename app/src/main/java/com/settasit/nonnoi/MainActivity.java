@@ -2,6 +2,7 @@ package com.settasit.nonnoi;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.location.Location;
@@ -116,7 +117,7 @@ public class MainActivity<ChecklistOptionActivity> extends FragmentActivity impl
             @Override
             public void onClick(View v) {
                 try {
-                    if (red == 0) {
+                    if (red == 0 && counter0 != 0) {
                         if (counter1 == 0) {
                             counter1 = 1;
                         } else {
